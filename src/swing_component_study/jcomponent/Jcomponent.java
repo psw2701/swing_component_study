@@ -18,27 +18,12 @@ public class Jcomponent extends JFrame implements ActionListener {
    private JPanel contentPane;
    private JButton b3;
 
-   /**
-    * Launch the application.
-    */
-   public static void main(String[] args) {
-      EventQueue.invokeLater(new Runnable() {
-         public void run() {
-            try {
-               Jcomponent frame = new Jcomponent();
-               frame.setVisible(true);
-            } catch (Exception e) {
-               e.printStackTrace();
-            }
-         }
-      });
-   }
 
    /**
     * Create the frame.
     */
    public Jcomponent() {
-      setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+      setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
       setBounds(260, 200, 260, 200);
       contentPane = new JPanel();
       contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
